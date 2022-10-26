@@ -1,0 +1,35 @@
+*{
+    box-sizing: border-box;
+}
+
+
+
+header{
+    outline: 4px solid black;
+}
+
+.fullpage{
+    min-height: 100vh;
+    outline: 4px solid blue;
+}
+
+.fullpage-two{
+    min-height: 100vh;
+    outline: 4px solid black;
+}
+
+aside{
+    outline: 2px solid green;
+    position: relative;
+    display: block; min-height: 30vh;
+}
+
+.father{
+    outline: 3px solid red;
+    background-color: antiquewhite;
+    min-height: 30vh;
+}
+
+.symbols{
+    outline: 2px solid red;
+}
