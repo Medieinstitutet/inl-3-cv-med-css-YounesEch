@@ -27,11 +27,18 @@
   outline: 4px solid black;
   background-color: aliceblue;
 }
-.fullpage header .front {
+.fullpage .front {
   justify-content: center;
   align-items: center;
   display: flex;
   position: relative;
+  font-size: 1.5rem;
+  top: 50vh;
+  text-transform: uppercase;
+  background-color: teal;
+  border-radius: 2px;
+  margin: 2rem;
+  font-family: "Times New Roman", Times, sans-serif;
 }
 
 .fullpage-two {
