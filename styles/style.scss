@@ -1,35 +1,192 @@
 *{
     box-sizing: border-box;
+    margin: 0;
+    padding: 0%;
 }
+@import "./tablets";
+@import "./desktop.scss";
 
-
-
-header{
-    outline: 4px solid black;
-}
 
 .fullpage{
     min-height: 100vh;
-    outline: 4px solid blue;
+    outline: 4px solid blue;   
+    
+    header{
+    outline: 4px solid black;
+    background-color: aliceblue;
+    
+    .front{
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        position: relative;
+    }
+
+}
+
 }
 
 .fullpage-two{
     min-height: 100vh;
     outline: 4px solid black;
+
+    .accordion{
+        min-width: 300px;
+        box-shadow: 0 0 10px rgba(0 0 0.2);
+        overflow: hidden;
+        background-color:#009578;
+    }
+
+    .accordion__label{
+        padding: 14px 20px;
+        display: block;
+        color: #fff;
+        font-weight: 500;
+        cursor: pointer;
+        position: relative;
+        transition: background 0.1s;
+    }
+
+    .accordion__label:hover{
+        background-color: rgba(0,0,0,1);
+    }
+
+    .accordion__label::after{
+        content:"";
+        position: absolute;
+        top: 50%;
+        right: 20px;
+        transform: translateY(-50%);
+        width:12px;
+        height:6px;
+        background-image: url('data:image/svg+xml;utf8,<svg width="100" height="50" xmlns="http://www.w3.org/2000/svg"><polygon points="0,0 100,0 50,50" style="fill:%23FFFFFF99;" /></svg>');
+        background-size: contain;
+        transition: transform 0.4s;
+    }
+
+    .accordion__content{
+        padding: 14px 20px;
+        background: #ffff;
+        line-height: 1.6;
+        font-size: 0.85rem; 
+        display:none;
+    }
+    .accordion__input{
+        visibility: hidden;
+    }
+
+    .accordion__input:checked~.accordion__content{
+        visibility: visible;
+        display: block;
+    }
+
+    .accordion__input:checked ~ .accordion__label::after {
+        transform: translateY(-50%) rotate(0.5turn);
+      }
+
+    aside{
+        outline: 2px solid green;
+        position: relative;
+        display: block;
+        min-width: 300px;
+        box-shadow: 0 0 10px rgba(0 0 0.2);
+        overflow: hidden;
+        background-color:#009578;
+        font-family: 'ubuntu', sans-serif;
+        box-sizing: border-box;
+
+        .accordion__content{
+            background-color: #111;
+        }
+
+        .skills{
+            width: 100%;
+            padding: 0 20px;
+            max-width: 700px;
+        }
+
+        .skill-name{
+            font-size: 14px;
+            font-weight: 700;
+            color: #f1f1f1;
+            text-transform: uppercase;
+            margin: 20px 0;   
+        }
+
+        .skill-bar{
+            height: 10px;
+            background-color: #282828;
+            border-radius: 3px;
+        }
+
+        .skill-per{
+            height: 10px;
+            background-color: #d13639;
+            border-radius: 3px;
+            position: relative;
+            animation: fillbars 2.5s;
+        }
+
+        .skill-per::before{
+            content: attr(per);
+            position: absolute;
+            padding: 4px 6px;
+            background-color: #f1f1f1;
+            border-radius: 4px;
+            font-size: 10px;
+            right: 0;
+            top: -35px;
+            transform: translateX(50%);
+        }
+
+        .skill-per::after{
+            content: "";
+            position:absolute;
+            width: 10px;
+            height: 10px;
+            background-color: #f1f1f1;
+            top: -20px;
+            right: 0;
+            transform: translateX(50%) rotate(45deg);
+            border-radius: 2px;
+        }
+
+        @keyframes fillbars {
+            from{
+                width: 0%;
+            }
+            to{
+                width: 100%;
+            }
+        }
+
+    }
+
 }
 
-aside{
-    outline: 2px solid green;
-    position: relative;
-    display: block; min-height: 30vh;
-}
 
-.father{
-    outline: 3px solid red;
-    background-color: antiquewhite;
-    min-height: 30vh;
-}
 
-.symbols{
+footer{
     outline: 2px solid red;
+    background-color: rgba(174, 168, 168, 0.717);
+    bottom: 0;
+    text-align: center;
+    i{
+        color: #fff;
+        font-size: 20px;
+        margin: 10px;
+        padding: 10px;
+        border-radius: 50%;
+        transition: 0.2 s linear;
+        cursor: pointer;
+        text-align: center;
+        justify-content: center;
+        position: relative;
+
+    }
+    i:hover{
+        background-color: white;
+        color: black;
+        box-shadow: 0 0 30px #fff;
+    }
 }

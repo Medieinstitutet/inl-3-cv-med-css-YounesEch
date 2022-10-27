@@ -1,0 +1,18 @@
+@media screen and (min-width: 1024) {
+  .fullpage ul {
+    visibility: hidden;
+  }
+  .fullpage-two .accordion {
+    width: 50%;
+    float: right;
+    text-align: center;
+    padding: 5%;
+    min-height: 100vh;
+  }
+  .fullpage-two aside {
+    width: 50%;
+    float: left;
+    padding: 2%;
+    min-height: 100vh;
+  }
+}/*# sourceMappingURL=tablets.css.map */

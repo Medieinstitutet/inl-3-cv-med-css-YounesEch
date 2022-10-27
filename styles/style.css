@@ -1,34 +1,188 @@
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0%;
 }
 
-header {
-  outline: 4px solid black;
+@media screen and (min-width: 1024) {
+  .fullpage-two .accordion {
+    width: 50%;
+    float: right;
+    text-align: center;
+    padding: 5%;
+    min-height: 100vh;
+  }
+  .fullpage-two aside {
+    width: 50%;
+    float: left;
+    padding: 2%;
+    min-height: 100vh;
+  }
 }
-
 .fullpage {
   min-height: 100vh;
   outline: 4px solid blue;
+}
+.fullpage header {
+  outline: 4px solid black;
+  background-color: aliceblue;
+}
+.fullpage header .front {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  position: relative;
 }
 
 .fullpage-two {
   min-height: 100vh;
   outline: 4px solid black;
 }
-
-aside {
+.fullpage-two .accordion {
+  min-width: 300px;
+  box-shadow: 0 0 10px rgb(0, 0, 0);
+  overflow: hidden;
+  background-color: #009578;
+}
+.fullpage-two .accordion__label {
+  padding: 14px 20px;
+  display: block;
+  color: #fff;
+  font-weight: 500;
+  cursor: pointer;
+  position: relative;
+  transition: background 0.1s;
+}
+.fullpage-two .accordion__label:hover {
+  background-color: rgb(0, 0, 0);
+}
+.fullpage-two .accordion__label::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  width: 12px;
+  height: 6px;
+  background-image: url('data:image/svg+xml;utf8,<svg width="100" height="50" xmlns="http://www.w3.org/2000/svg"><polygon points="0,0 100,0 50,50" style="fill:%23FFFFFF99;" /></svg>');
+  background-size: contain;
+  transition: transform 0.4s;
+}
+.fullpage-two .accordion__content {
+  padding: 14px 20px;
+  background: white;
+  line-height: 1.6;
+  font-size: 0.85rem;
+  display: none;
+}
+.fullpage-two .accordion__input {
+  visibility: hidden;
+}
+.fullpage-two .accordion__input:checked ~ .accordion__content {
+  visibility: visible;
+  display: block;
+}
+.fullpage-two .accordion__input:checked ~ .accordion__label::after {
+  transform: translateY(-50%) rotate(0.5turn);
+}
+.fullpage-two aside {
   outline: 2px solid green;
   position: relative;
   display: block;
-  min-height: 30vh;
+  min-width: 300px;
+  box-shadow: 0 0 10px rgb(0, 0, 0);
+  overflow: hidden;
+  background-color: #009578;
+  font-family: "ubuntu", sans-serif;
+  box-sizing: border-box;
+}
+.fullpage-two aside .accordion__content {
+  background-color: #111;
+}
+.fullpage-two aside .skills {
+  width: 100%;
+  padding: 0 20px;
+  max-width: 700px;
+}
+.fullpage-two aside .skill-name {
+  font-size: 14px;
+  font-weight: 700;
+  color: #f1f1f1;
+  text-transform: uppercase;
+  margin: 20px 0;
+}
+.fullpage-two aside .skill-bar {
+  height: 10px;
+  background-color: #282828;
+  border-radius: 3px;
+}
+.fullpage-two aside .skill-per {
+  height: 10px;
+  background-color: #d13639;
+  border-radius: 3px;
+  position: relative;
+  -webkit-animation: fillbars 2.5s;
+          animation: fillbars 2.5s;
+}
+.fullpage-two aside .skill-per::before {
+  content: attr(per);
+  position: absolute;
+  padding: 4px 6px;
+  background-color: #f1f1f1;
+  border-radius: 4px;
+  font-size: 10px;
+  right: 0;
+  top: -35px;
+  transform: translateX(50%);
+}
+.fullpage-two aside .skill-per::after {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: #f1f1f1;
+  top: -20px;
+  right: 0;
+  transform: translateX(50%) rotate(45deg);
+  border-radius: 2px;
+}
+@-webkit-keyframes fillbars {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}
+@keyframes fillbars {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
 }
 
-.father {
-  outline: 3px solid red;
-  background-color: antiquewhite;
-  min-height: 30vh;
-}
-
-.symbols {
+footer {
   outline: 2px solid red;
+  background-color: rgba(174, 168, 168, 0.717);
+  bottom: 0;
+  text-align: center;
+}
+footer i {
+  color: #fff;
+  font-size: 20px;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 50%;
+  transition: 0.2 s linear;
+  cursor: pointer;
+  text-align: center;
+  justify-content: center;
+  position: relative;
+}
+footer i:hover {
+  background-color: white;
+  color: black;
+  box-shadow: 0 0 30px #fff;
 }/*# sourceMappingURL=style.css.map */
