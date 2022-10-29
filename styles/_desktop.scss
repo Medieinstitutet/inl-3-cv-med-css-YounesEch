@@ -1,5 +1,57 @@
 @media screen and (min-width: 1400px)
-{   
-    
-    
+{.fullpage{
+    height: 100vh;
+    float: left;
+    display: flex;
+
+    h1{
+        font-size: 1rem;
+        font-weight: 300;
+    }
+
+    img{
+        height:150px;
+        width: 100px;
+        box-shadow: 10px 10px 10px rgba(189, 48, 48, 0.717),
+            inset 10px 10px 10px rgba(196, 181, 181, 0.717),
+            10px 10px;
+    }
+
+
+    .container{
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        margin-bottom: 30%;
+    }
+}
+}
+
+.fullpage-two{
+    min-height: 100vh;
+
+    .accordion{
+        width: 50%;
+        float: right;
+        text-align: center;
+        padding: 5%;
+
+       
+
+        .accordion__content{
+            background: #ffff;
+            line-height: 1;
+            font-size: 1rem; 
+            visibility: hidden;
+        } }
+       
+    aside{
+        width: 50%;
+        float: right; 
+        
+
+        .aside__box{
+            padding-top: 3rem;
+        }
+    }
 }

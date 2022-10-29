@@ -1,50 +1,44 @@
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0%;
-}
-
 @import "./tablets.scss";
 @import "./desktop.scss";
 
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 
 .fullpage{
     min-height: 100vh;
-    outline: 4px solid blue;
-    background-color: rgb(136, 156, 173);   
+    background-color: rgb(136, 156, 173);
     
     header{
-    outline: 4px solid black;
-    background-color: aliceblue;
-    height: 5rem;
+    background-color: rgb;
+    height: 2rem;
     padding: 5px;
     justify-content: center;
     align-items: center;
     display: flex;
     font-size: 1rem;
     font-family: 'Times New Roman', Times, sans-serif;
-    font-weight: 500;
-
-    li{
-        display: flex;
-        flex-direction: column;
-    }
-    }
-    
-    }
-
-    .container{
-        padding-top: 5rem;
-    }
-    
+    font-weight: 500;    }
 
     h1{
         justify-content: center;
         align-items: center;
         text-transform: uppercase;
         display: flex;
-        top: 50px;
-        font-size: 2rem;
+        top: 20px;
+        font-size: 1rem;
+        margin: 20px;
+    }
+
+    h2{       
+        justify-content: center;
+        align-items: center;
+        text-transform: uppercase;
+        display: flex;
+        top: 20px;
+        font-size: 1rem;
     }
 
     figure{
@@ -52,12 +46,11 @@
         justify-content: center;
         align-items: center;
         display: flex;
-        padding-top: 5rem;
         img{
             border-radius: 10px;
             box-shadow: 20px 20px 20px rgba(189, 48, 48, 0.717),
             inset 20px 20px 20px rgba(196, 181, 181, 0.717),
-            40px 40px;
+            40px 20px;
         }
     }
 
@@ -75,25 +68,26 @@
         
     }
 
+}
 
-.fullpage-two{
-    min-height: 100vh;
-    outline: 4px solid black;
+    .fullpage-two{
+        min-height: 100vh;
 
     .accordion{
         min-width: 300px;
         box-shadow: 0 0 10px rgba(0 0 0.2);
         overflow: hidden;
-        background-color:#009578;
-        min-height: 50vh;
+        background-color:#18473e;
+        height: 100vh;
+        width: 100%;    
     }
 
     .accordion__box{
-        min-height: 15rem;
+        min-height: 10rem;
     }
 
     .accordion__label{
-        padding: 14px 20px;
+        padding: 5px 5px;
         display: block;
         color: #fff;
         font-weight: 500;
@@ -120,11 +114,12 @@
     }
 
     .accordion__content{
-        padding: 14px 20px;
+        padding: 3px 3px;
         background: #ffff;
-        line-height: 1.6;
+        line-height: 1;
         font-size: 0.85rem; 
-        display:none;
+        visibility: hidden;
+
     }
     .accordion__input{
         visibility: hidden;
@@ -140,24 +135,27 @@
       }
 
     aside{
-        outline: 2px solid green;
         position: relative;
         display: block;
         min-width: 300px;
         box-shadow: 0 0 10px rgba(0 0 0.2);
         overflow: hidden;
-        background-color:#009578;
-        font-family: 'ubuntu', sans-serif;
+        background-color:#18473e;
         box-sizing: border-box;
-        min-height: 50vh;
+        height: 100vh;
+        width: 100%;
 
-        .accordion__content{
+
+        aside .accordion__content{
             background-color: #111;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
         }
 
         .skills{
             width: 100%;
-            padding: 0 20px;
+            padding: 0 10px;
             max-width: 700px;
         }
 
@@ -193,6 +191,7 @@
             right: 0;
             top: -35px;
             transform: translateX(50%);
+            z-index: 1;
         }
 
         .skill-per::after{
@@ -223,23 +222,23 @@
 
 
 footer{
-    outline: 2px solid red;
     background-color: rgba(174, 168, 168, 0.717);
-    bottom: 0;
+    bottom:0;
     text-align: center;
     i{
-        color: #fff;
-        font-size: 20px;
+        color:rgb(52, 7, 129);
+        font-size: 10px;
         margin: 10px;
-        padding: 10px;
+        padding: 5px;
         border-radius: 50%;
         transition: 0.2 s linear;
         cursor: pointer;
         text-align: center;
         justify-content: center;
-        position: relative;
+        text-decoration:wavy;
 
     }
+
     i:hover{
         background-color: white;
         color: black;

@@ -1,37 +1,105 @@
+@media screen and (min-width: 900px) {
+  .fullpage {
+    height: 100vh;
+    float: left;
+    display: flex;
+  }
+  .fullpage h1 {
+    font-size: 1rem;
+    font-weight: 300;
+  }
+  .fullpage img {
+    height: 150px;
+    width: 100px;
+    box-shadow: 10px 10px 10px rgba(189, 48, 48, 0.717), inset 10px 10px 10px rgba(196, 181, 181, 0.717), 10px 10px;
+  }
+  .fullpage .container {
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-bottom: 30%;
+  }
+}
+.fullpage-two {
+  min-height: 100vh;
+}
+.fullpage-two .accordion {
+  float: right;
+  text-align: center;
+  padding: 5%;
+}
+.fullpage-two .accordion .accordion__content {
+  background: white;
+  line-height: 1;
+  font-size: 1rem;
+  visibility: hidden;
+}
+.fullpage-two aside {
+  width: 40%;
+  float: right;
+}
+.fullpage-two aside .aside__box {
+  padding-top: 3rem;
+}
+
+@media screen and (min-width: 1400px) {
+  .fullpage {
+    height: 100vh;
+    float: left;
+    display: flex;
+  }
+  .fullpage h1 {
+    font-size: 1rem;
+    font-weight: 300;
+  }
+  .fullpage img {
+    height: 150px;
+    width: 100px;
+    box-shadow: 10px 10px 10px rgba(189, 48, 48, 0.717), inset 10px 10px 10px rgba(196, 181, 181, 0.717), 10px 10px;
+  }
+  .fullpage .container {
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-bottom: 30%;
+  }
+}
+.fullpage-two {
+  min-height: 100vh;
+}
+.fullpage-two .accordion {
+  width: 50%;
+  float: right;
+  text-align: center;
+  padding: 5%;
+}
+.fullpage-two .accordion .accordion__content {
+  background: white;
+  line-height: 1;
+  font-size: 1rem;
+  visibility: hidden;
+}
+.fullpage-two aside {
+  width: 50%;
+  float: right;
+}
+.fullpage-two aside .aside__box {
+  padding-top: 3rem;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
-  padding: 0%;
+  padding: 0;
 }
 
-@media screen and (min-width: 900px) {
-  .fullpage header li {
-    display: flex;
-    flex-direction: row;
-  }
-  .fullpage-two .accordion {
-    width: 50%;
-    float: right;
-    text-align: center;
-    padding: 5%;
-    min-height: 100vh;
-  }
-  .fullpage-two aside {
-    width: 50%;
-    float: left;
-    padding: 2%;
-    min-height: 100vh;
-  }
-}
 .fullpage {
   min-height: 100vh;
-  outline: 4px solid blue;
   background-color: rgb(136, 156, 173);
 }
 .fullpage header {
-  outline: 4px solid black;
-  background-color: aliceblue;
-  height: 5rem;
+  background-color: rgb;
+  height: 2rem;
   padding: 5px;
   justify-content: center;
   align-items: center;
@@ -40,37 +108,34 @@
   font-family: "Times New Roman", Times, sans-serif;
   font-weight: 500;
 }
-.fullpage header li {
-  display: flex;
-  flex-direction: column;
-}
-
-.container {
-  padding-top: 5rem;
-}
-
-h1 {
+.fullpage h1 {
   justify-content: center;
   align-items: center;
   text-transform: uppercase;
   display: flex;
-  top: 50px;
-  font-size: 2rem;
+  top: 20px;
+  font-size: 1rem;
+  margin: 20px;
 }
-
-figure {
+.fullpage h2 {
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  display: flex;
+  top: 20px;
+  font-size: 1rem;
+}
+.fullpage figure {
   position: relative;
   justify-content: center;
   align-items: center;
   display: flex;
-  padding-top: 5rem;
 }
-figure img {
+.fullpage figure img {
   border-radius: 10px;
-  box-shadow: 20px 20px 20px rgba(189, 48, 48, 0.717), inset 20px 20px 20px rgba(196, 181, 181, 0.717), 40px 40px;
+  box-shadow: 20px 20px 20px rgba(189, 48, 48, 0.717), inset 20px 20px 20px rgba(196, 181, 181, 0.717), 40px 20px;
 }
-
-.front {
+.fullpage .front {
   justify-content: center;
   align-items: center;
   display: flex;
@@ -84,20 +149,20 @@ figure img {
 
 .fullpage-two {
   min-height: 100vh;
-  outline: 4px solid black;
 }
 .fullpage-two .accordion {
   min-width: 300px;
   box-shadow: 0 0 10px rgb(0, 0, 0);
   overflow: hidden;
-  background-color: #009578;
-  min-height: 50vh;
+  background-color: #18473e;
+  height: 100vh;
+  width: 100%;
 }
 .fullpage-two .accordion__box {
-  min-height: 15rem;
+  min-height: 10rem;
 }
 .fullpage-two .accordion__label {
-  padding: 14px 20px;
+  padding: 5px 5px;
   display: block;
   color: #fff;
   font-weight: 500;
@@ -121,11 +186,11 @@ figure img {
   transition: transform 0.4s;
 }
 .fullpage-two .accordion__content {
-  padding: 14px 20px;
+  padding: 3px 3px;
   background: white;
-  line-height: 1.6;
+  line-height: 1;
   font-size: 0.85rem;
-  display: none;
+  visibility: hidden;
 }
 .fullpage-two .accordion__input {
   visibility: hidden;
@@ -138,23 +203,25 @@ figure img {
   transform: translateY(-50%) rotate(0.5turn);
 }
 .fullpage-two aside {
-  outline: 2px solid green;
   position: relative;
   display: block;
   min-width: 300px;
   box-shadow: 0 0 10px rgb(0, 0, 0);
   overflow: hidden;
-  background-color: #009578;
-  font-family: "ubuntu", sans-serif;
+  background-color: #18473e;
   box-sizing: border-box;
-  min-height: 50vh;
+  height: 100vh;
+  width: 100%;
 }
-.fullpage-two aside .accordion__content {
+.fullpage-two aside aside .accordion__content {
   background-color: #111;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
 }
 .fullpage-two aside .skills {
   width: 100%;
-  padding: 0 20px;
+  padding: 0 10px;
   max-width: 700px;
 }
 .fullpage-two aside .skill-name {
@@ -187,6 +254,7 @@ figure img {
   right: 0;
   top: -35px;
   transform: translateX(50%);
+  z-index: 1;
 }
 .fullpage-two aside .skill-per::after {
   content: "";
@@ -217,22 +285,22 @@ figure img {
 }
 
 footer {
-  outline: 2px solid red;
   background-color: rgba(174, 168, 168, 0.717);
   bottom: 0;
   text-align: center;
 }
 footer i {
-  color: #fff;
-  font-size: 20px;
+  color: rgb(52, 7, 129);
+  font-size: 10px;
   margin: 10px;
-  padding: 10px;
+  padding: 5px;
   border-radius: 50%;
   transition: 0.2 s linear;
   cursor: pointer;
   text-align: center;
   justify-content: center;
-  position: relative;
+  -webkit-text-decoration: wavy;
+          text-decoration: wavy;
 }
 footer i:hover {
   background-color: white;
