@@ -1,4 +1,5 @@
 @media screen and (min-width: 1400px)
+
 {.fullpage{
     height: 100vh;
     float: left;
@@ -6,14 +7,12 @@
 
     h1{
         font-size: 1rem;
-        font-weight: 300;
+        font-weight: bolder;
     }
 
     img{
-        height:150px;
-        width: 100px;
-        box-shadow: 10px 10px 10px rgba(189, 48, 48, 0.717),
-            inset 10px 10px 10px rgba(196, 181, 181, 0.717),
+        box-shadow: 10px 10px 10px rgba(23, 42, 142, 0.717),
+            inset 10px 10px 10px rgba(11, 50, 108, 0.717),
             10px 10px;
     }
 
@@ -31,7 +30,6 @@
     min-height: 100vh;
 
     .accordion{
-        width: 50%;
         float: right;
         text-align: center;
         padding: 5%;
@@ -39,10 +37,16 @@
        
 
         .accordion__content{
-            background: #ffff;
+            background-color: rgb(136, 156, 173);
             line-height: 1;
             font-size: 1rem; 
             visibility: hidden;
+            line-height: 1.5em;
+            p{
+                color: black;
+                font-size: larger;
+                line-height: 1.2rem;
+            }
         } }
        
     aside{
@@ -52,6 +56,8 @@
 
         .aside__box{
             padding-top: 3rem;
+            line-height: 1.5rem;
         }
+
     }
 }

@@ -8,12 +8,10 @@ $breakpoint-tablet: 900px;
 
     h1{
         font-size: 1rem;
-        font-weight: 300;
+        font-weight: bolder;
     }
 
     img{
-        height:150px;
-        width: 100px;
         box-shadow: 10px 10px 10px rgba(189, 48, 48, 0.717),
             inset 10px 10px 10px rgba(196, 181, 181, 0.717),
             10px 10px;
@@ -36,14 +34,14 @@ $breakpoint-tablet: 900px;
         float: right;
         text-align: center;
         padding: 5%;
-               
-
+            
         .accordion__content{
-            background: #ffff;
+            background-color: rgb(53, 37, 37);
             line-height: 1;
             font-size: 1rem; 
             visibility: hidden;
-        } }
+        } 
+    }
        
     aside{
         width: 40%;

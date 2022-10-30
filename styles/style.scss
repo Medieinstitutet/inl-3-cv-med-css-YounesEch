@@ -1,34 +1,27 @@
 @import "./tablets.scss";
 @import "./desktop.scss";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300&display=swap');
 
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: 'Poppins', sans-serif;
+
 }
 
 .fullpage{
     min-height: 100vh;
     background-color: rgb(136, 156, 173);
+    min-width: 100vw;
     
-    header{
-    background-color: rgb;
-    height: 2rem;
-    padding: 5px;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    font-size: 1rem;
-    font-family: 'Times New Roman', Times, sans-serif;
-    font-weight: 500;    }
-
     h1{
         justify-content: center;
         align-items: center;
         text-transform: uppercase;
         display: flex;
         top: 20px;
-        font-size: 1rem;
+        font-size: 2.3rem;
         margin: 20px;
     }
 
@@ -67,29 +60,34 @@
         font-family: 'Times New Roman', Times, sans-serif;
         
     }
+    .arrow{
+        display: flex;
+        justify-content: center;
+        bottom: 0;
+        font-size: 2rem;
+    }
 
 }
 
-    .fullpage-two{
+.fullpage-two{
         min-height: 100vh;
+        min-width: 100vw;
 
     .accordion{
-        min-width: 300px;
         box-shadow: 0 0 10px rgba(0 0 0.2);
-        overflow: hidden;
         background-color:#18473e;
-        height: 100vh;
+        min-height: 50vh;
         width: 100%;    
     }
 
-    .accordion__box{
-        min-height: 10rem;
-    }
-
     .accordion__label{
-        padding: 5px 5px;
         display: block;
-        color: #fff;
+        background-color: rgb(67, 90, 61);
+        color: #f1f1f1;
+        height: 30px;
+        width: 50%;
+        font-size: x-large;
+        left: 20vw;
         font-weight: 500;
         cursor: pointer;
         position: relative;
@@ -103,8 +101,6 @@
     .accordion__label::after{
         content:"";
         position: absolute;
-        top: 50%;
-        right: 20px;
         transform: translateY(-50%);
         width:12px;
         height:6px;
@@ -114,10 +110,9 @@
     }
 
     .accordion__content{
-        padding: 3px 3px;
-        background: #ffff;
+        background-color: rgb(53, 37, 37);
         line-height: 1;
-        font-size: 0.85rem; 
+        font-size: 1rem; 
         visibility: hidden;
 
     }
@@ -134,24 +129,37 @@
         transform: translateY(-50%) rotate(0.5turn);
       }
 
+
+
     aside{
         position: relative;
         display: block;
-        min-width: 300px;
-        box-shadow: 0 0 10px rgba(0 0 0.2);
         overflow: hidden;
         background-color:#18473e;
         box-sizing: border-box;
-        height: 100vh;
+        min-height: 50vh;
+        padding: 2rem;
         width: 100%;
 
 
-        aside .accordion__content{
+        .accordion__content{
             background-color: #111;
             text-align: center;
             justify-content: center;
             align-items: center;
         }
+
+        .accordion__label{
+            display: block;
+            color: #fff;
+            font-weight: 500;
+            cursor: pointer;
+            position: relative;
+            transition: background 0.1s;
+            justify-content: center;
+            text-align: center;
+        }
+    
 
         .skills{
             width: 100%;
@@ -164,7 +172,6 @@
             font-weight: 700;
             color: #f1f1f1;
             text-transform: uppercase;
-            margin: 20px 0;   
         }
 
         .skill-bar{
@@ -220,14 +227,13 @@
 }
 
 
-
 footer{
     background-color: rgba(174, 168, 168, 0.717);
     bottom:0;
     text-align: center;
     i{
-        color:rgb(52, 7, 129);
-        font-size: 10px;
+        color:#111;
+        font-size:small;
         margin: 10px;
         padding: 5px;
         border-radius: 50%;

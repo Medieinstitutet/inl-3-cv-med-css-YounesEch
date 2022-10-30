@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300&display=swap");
 @media screen and (min-width: 900px) {
   .fullpage {
     height: 100vh;
@@ -6,11 +7,9 @@
   }
   .fullpage h1 {
     font-size: 1rem;
-    font-weight: 300;
+    font-weight: bolder;
   }
   .fullpage img {
-    height: 150px;
-    width: 100px;
     box-shadow: 10px 10px 10px rgba(189, 48, 48, 0.717), inset 10px 10px 10px rgba(196, 181, 181, 0.717), 10px 10px;
   }
   .fullpage .container {
@@ -29,7 +28,7 @@
   padding: 5%;
 }
 .fullpage-two .accordion .accordion__content {
-  background: white;
+  background-color: rgb(53, 37, 37);
   line-height: 1;
   font-size: 1rem;
   visibility: hidden;
@@ -50,12 +49,10 @@
   }
   .fullpage h1 {
     font-size: 1rem;
-    font-weight: 300;
+    font-weight: bolder;
   }
   .fullpage img {
-    height: 150px;
-    width: 100px;
-    box-shadow: 10px 10px 10px rgba(189, 48, 48, 0.717), inset 10px 10px 10px rgba(196, 181, 181, 0.717), 10px 10px;
+    box-shadow: 10px 10px 10px rgba(23, 42, 142, 0.717), inset 10px 10px 10px rgba(11, 50, 108, 0.717), 10px 10px;
   }
   .fullpage .container {
     justify-content: center;
@@ -68,16 +65,21 @@
   min-height: 100vh;
 }
 .fullpage-two .accordion {
-  width: 50%;
   float: right;
   text-align: center;
   padding: 5%;
 }
 .fullpage-two .accordion .accordion__content {
-  background: white;
+  background-color: rgb(136, 156, 173);
   line-height: 1;
   font-size: 1rem;
   visibility: hidden;
+  line-height: 1.5em;
+}
+.fullpage-two .accordion .accordion__content p {
+  color: black;
+  font-size: larger;
+  line-height: 1.2rem;
 }
 .fullpage-two aside {
   width: 50%;
@@ -85,28 +87,20 @@
 }
 .fullpage-two aside .aside__box {
   padding-top: 3rem;
+  line-height: 1.5rem;
 }
 
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: "Poppins", sans-serif;
 }
 
 .fullpage {
   min-height: 100vh;
   background-color: rgb(136, 156, 173);
-}
-.fullpage header {
-  background-color: rgb;
-  height: 2rem;
-  padding: 5px;
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  font-size: 1rem;
-  font-family: "Times New Roman", Times, sans-serif;
-  font-weight: 500;
+  min-width: 100vw;
 }
 .fullpage h1 {
   justify-content: center;
@@ -114,7 +108,7 @@
   text-transform: uppercase;
   display: flex;
   top: 20px;
-  font-size: 1rem;
+  font-size: 2.3rem;
   margin: 20px;
 }
 .fullpage h2 {
@@ -146,25 +140,31 @@
   border-radius: 2px;
   font-family: "Times New Roman", Times, sans-serif;
 }
+.fullpage .arrow {
+  display: flex;
+  justify-content: center;
+  bottom: 0;
+  font-size: 2rem;
+}
 
 .fullpage-two {
   min-height: 100vh;
+  min-width: 100vw;
 }
 .fullpage-two .accordion {
-  min-width: 300px;
   box-shadow: 0 0 10px rgb(0, 0, 0);
-  overflow: hidden;
   background-color: #18473e;
-  height: 100vh;
+  min-height: 50vh;
   width: 100%;
 }
-.fullpage-two .accordion__box {
-  min-height: 10rem;
-}
 .fullpage-two .accordion__label {
-  padding: 5px 5px;
   display: block;
-  color: #fff;
+  background-color: rgb(67, 90, 61);
+  color: #f1f1f1;
+  height: 30px;
+  width: 50%;
+  font-size: x-large;
+  left: 20vw;
   font-weight: 500;
   cursor: pointer;
   position: relative;
@@ -176,8 +176,6 @@
 .fullpage-two .accordion__label::after {
   content: "";
   position: absolute;
-  top: 50%;
-  right: 20px;
   transform: translateY(-50%);
   width: 12px;
   height: 6px;
@@ -186,10 +184,9 @@
   transition: transform 0.4s;
 }
 .fullpage-two .accordion__content {
-  padding: 3px 3px;
-  background: white;
+  background-color: rgb(53, 37, 37);
   line-height: 1;
-  font-size: 0.85rem;
+  font-size: 1rem;
   visibility: hidden;
 }
 .fullpage-two .accordion__input {
@@ -205,19 +202,28 @@
 .fullpage-two aside {
   position: relative;
   display: block;
-  min-width: 300px;
-  box-shadow: 0 0 10px rgb(0, 0, 0);
   overflow: hidden;
   background-color: #18473e;
   box-sizing: border-box;
-  height: 100vh;
+  min-height: 50vh;
+  padding: 2rem;
   width: 100%;
 }
-.fullpage-two aside aside .accordion__content {
+.fullpage-two aside .accordion__content {
   background-color: #111;
   text-align: center;
   justify-content: center;
   align-items: center;
+}
+.fullpage-two aside .accordion__label {
+  display: block;
+  color: #fff;
+  font-weight: 500;
+  cursor: pointer;
+  position: relative;
+  transition: background 0.1s;
+  justify-content: center;
+  text-align: center;
 }
 .fullpage-two aside .skills {
   width: 100%;
@@ -229,7 +235,6 @@
   font-weight: 700;
   color: #f1f1f1;
   text-transform: uppercase;
-  margin: 20px 0;
 }
 .fullpage-two aside .skill-bar {
   height: 10px;
@@ -290,8 +295,8 @@ footer {
   text-align: center;
 }
 footer i {
-  color: rgb(52, 7, 129);
-  font-size: 10px;
+  color: #111;
+  font-size: small;
   margin: 10px;
   padding: 5px;
   border-radius: 50%;
