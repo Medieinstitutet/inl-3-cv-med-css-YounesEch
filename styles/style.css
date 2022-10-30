@@ -1,9 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300&display=swap");
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 1024px) {
   .fullpage {
     height: 100vh;
     float: left;
     display: flex;
+    background-color: black;
   }
   .fullpage h1 {
     font-size: 1rem;
@@ -41,9 +42,10 @@
   padding-top: 3rem;
 }
 
-@media screen and (min-width: 1400px) {
+@media screen and (min-width: 1366px) {
   .fullpage {
-    height: 100vh;
+    min-height: 100vh;
+    background-color: black;
     float: left;
     display: flex;
   }
@@ -63,17 +65,17 @@
 }
 .fullpage-two {
   min-height: 100vh;
+  min-width: 100vw;
 }
 .fullpage-two .accordion {
-  float: right;
+  float: left;
+  width: 40%;
   text-align: center;
-  padding: 5%;
 }
 .fullpage-two .accordion .accordion__content {
   background-color: rgb(136, 156, 173);
   line-height: 1;
   font-size: 1rem;
-  visibility: hidden;
   line-height: 1.5em;
 }
 .fullpage-two .accordion .accordion__content p {
@@ -82,7 +84,7 @@
   line-height: 1.2rem;
 }
 .fullpage-two aside {
-  width: 50%;
+  width: 40%;
   float: right;
 }
 .fullpage-two aside .aside__box {
@@ -99,7 +101,7 @@
 
 .fullpage {
   min-height: 100vh;
-  background-color: rgb(136, 156, 173);
+  background-color: rgb(19, 21, 23);
   min-width: 100vw;
 }
 .fullpage h1 {
@@ -110,6 +112,7 @@
   top: 20px;
   font-size: 2.3rem;
   margin: 20px;
+  color: #f1f1f1;
 }
 .fullpage h2 {
   justify-content: center;
@@ -118,6 +121,7 @@
   display: flex;
   top: 20px;
   font-size: 1rem;
+  color: #f1f1f1;
 }
 .fullpage figure {
   position: relative;
@@ -159,15 +163,13 @@
 }
 .fullpage-two .accordion__label {
   display: block;
-  background-color: rgb(67, 90, 61);
   color: #f1f1f1;
   height: 30px;
-  width: 50%;
+  width: 100%;
   font-size: x-large;
   left: 20vw;
   font-weight: 500;
   cursor: pointer;
-  position: relative;
   transition: background 0.1s;
 }
 .fullpage-two .accordion__label:hover {
@@ -187,7 +189,7 @@
   background-color: rgb(53, 37, 37);
   line-height: 1;
   font-size: 1rem;
-  visibility: hidden;
+  display: none;
 }
 .fullpage-two .accordion__input {
   visibility: hidden;
@@ -207,11 +209,10 @@
   box-sizing: border-box;
   min-height: 50vh;
   padding: 2rem;
-  width: 100%;
+  width: 100vw;
 }
 .fullpage-two aside .accordion__content {
   background-color: #111;
-  text-align: center;
   justify-content: center;
   align-items: center;
 }
@@ -220,10 +221,9 @@
   color: #fff;
   font-weight: 500;
   cursor: pointer;
-  position: relative;
-  transition: background 0.1s;
   justify-content: center;
   text-align: center;
+  transition: background 0.1s;
 }
 .fullpage-two aside .skills {
   width: 100%;
@@ -311,4 +311,45 @@ footer i:hover {
   background-color: white;
   color: black;
   box-shadow: 0 0 30px #fff;
+}
+
+@media screen and (min-width: 1024px) {
+  .body {
+    display: flex;
+  }
+  .fullpage {
+    display: grid;
+    grid-template-columns: 200px;
+    min-width: 30%;
+    padding: 2px;
+  }
+  .fullpage h1 {
+    font-size: smaller;
+  }
+  .fullpage h2 {
+    font-size: smaller;
+  }
+  .fullpage .front {
+    font-size: smaller;
+  }
+  .fullpage img {
+    height: 250px;
+    width: 150px;
+  }
+  .fullpage-two {
+    position: relative;
+    min-width: 40vw;
+  }
+  .fullpage-two .accordion {
+    display: grid;
+    grid-template-columns: 200px;
+    width: 30%;
+    min-height: 100vh;
+  }
+  .fullpage-two aside {
+    display: grid;
+    grid-template-columns: 200px 500px;
+    width: 40%;
+    min-height: 100vh;
+  }
 }/*# sourceMappingURL=style.css.map */

@@ -12,9 +12,9 @@
 
 .fullpage{
     min-height: 100vh;
-    background-color: rgb(136, 156, 173);
+    background-color: rgb(19, 21, 23);
     min-width: 100vw;
-    
+
     h1{
         justify-content: center;
         align-items: center;
@@ -23,6 +23,7 @@
         top: 20px;
         font-size: 2.3rem;
         margin: 20px;
+        color: #f1f1f1;
     }
 
     h2{       
@@ -32,6 +33,7 @@
         display: flex;
         top: 20px;
         font-size: 1rem;
+        color: #f1f1f1;
     }
 
     figure{
@@ -82,15 +84,13 @@
 
     .accordion__label{
         display: block;
-        background-color: rgb(67, 90, 61);
         color: #f1f1f1;
         height: 30px;
-        width: 50%;
+        width: 100%;
         font-size: x-large;
         left: 20vw;
         font-weight: 500;
         cursor: pointer;
-        position: relative;
         transition: background 0.1s;
     }
 
@@ -113,7 +113,7 @@
         background-color: rgb(53, 37, 37);
         line-height: 1;
         font-size: 1rem; 
-        visibility: hidden;
+        display: none;
 
     }
     .accordion__input{
@@ -139,12 +139,11 @@
         box-sizing: border-box;
         min-height: 50vh;
         padding: 2rem;
-        width: 100%;
+        width: 100vw;
 
 
         .accordion__content{
             background-color: #111;
-            text-align: center;
             justify-content: center;
             align-items: center;
         }
@@ -154,10 +153,10 @@
             color: #fff;
             font-weight: 500;
             cursor: pointer;
-            position: relative;
-            transition: background 0.1s;
             justify-content: center;
             text-align: center;
+            transition: background 0.1s;
+
         }
     
 
@@ -251,3 +250,50 @@ footer{
         box-shadow: 0 0 30px #fff;
     }
 }
+
+@media screen and(min-width:1024px) {
+
+    .body{
+        display: flex;
+    }
+    .fullpage{
+        display: grid;
+        grid-template-columns: 200px;
+        min-width: 30%;
+        padding: 2px;
+
+        h1{
+            font-size: smaller;}
+
+        h2{
+            font-size: smaller;}
+
+        .front{
+            font-size: smaller;}
+        
+        img{
+            height: 250px;
+            width: 150px;}
+    }
+
+
+    .fullpage-two{
+        position: relative;
+        min-width: 40vw;
+        
+
+    .accordion{
+        display: grid;
+        grid-template-columns: 200px; 
+        width: 30%;
+        min-height: 100vh;
+
+    }
+    aside{
+        display: grid;
+        grid-template-columns: 200px 500px; 
+        width: 40%;
+        min-height: 100vh;
+
+    }
+}}

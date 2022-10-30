@@ -1,7 +1,8 @@
-@media screen and (min-width: 1400px)
+@media screen and (min-width: 1366px)
 
 {.fullpage{
-    height: 100vh;
+    min-height: 100vh;
+    background-color: black;
     float: left;
     display: flex;
 
@@ -28,11 +29,13 @@
 
 .fullpage-two{
     min-height: 100vh;
+    min-width: 100vw;
 
     .accordion{
-        float: right;
+        float: left;
+        width: 40%;
         text-align: center;
-        padding: 5%;
+
 
        
 
@@ -40,7 +43,6 @@
             background-color: rgb(136, 156, 173);
             line-height: 1;
             font-size: 1rem; 
-            visibility: hidden;
             line-height: 1.5em;
             p{
                 color: black;
@@ -50,7 +52,7 @@
         } }
        
     aside{
-        width: 50%;
+        width: 40%;
         float: right; 
         
 
@@ -58,6 +60,5 @@
             padding-top: 3rem;
             line-height: 1.5rem;
         }
-
     }
 }
