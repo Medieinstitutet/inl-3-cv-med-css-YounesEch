@@ -220,7 +220,7 @@
                 width: 100%;
             }
         }
-
+        .desktop{visibility: hidden;}
     }
 
 }
@@ -251,16 +251,21 @@ footer{
     }
 }
 
-@media screen and(min-width:1024px) {
+@media screen and(min-width:1440px) {
 
     .body{
         display: flex;
     }
     .fullpage{
         display: grid;
-        grid-template-columns: 200px;
+        grid-template-columns: 100px;
         min-width: 30%;
         padding: 2px;
+
+        .container{
+            min-height: 100vh;
+            display: flex;
+        }
 
         h1{
             font-size: smaller;}
@@ -272,28 +277,64 @@ footer{
             font-size: smaller;}
         
         img{
-            height: 250px;
-            width: 150px;}
+            height: 200px;
+            width: 100px;
+            }
     }
 
 
     .fullpage-two{
         position: relative;
-        min-width: 40vw;
-        
+        min-width: 40vw;      
 
     .accordion{
         display: grid;
-        grid-template-columns: 200px; 
+        grid-template-columns: 300px; 
         width: 30%;
-        min-height: 100vh;
+        min-height:100vh;
+        background-color: #111;
 
+        .accordion__content{
+            visibility: visible;
+        }
+        .accordion__input{
+            visibility: hidden;
+        }
     }
+
+    .accordion__content{
+       display: block;
+    }
+
+    
+
     aside{
         display: grid;
-        grid-template-columns: 200px 500px; 
+        grid-template-columns: 1500px 500px; 
         width: 40%;
         min-height: 100vh;
-
+        background-color: #111;
+        .accordion__content{
+            height: 15vh;
+            padding-top: 20px;
+            text-align: center;
+                }
+        .aside__box{
+            position: relative;
+        }
+        div{
+            width: 30vw;
+        }
+        .desktop{
+            visibility: visible;
+            color: burlywood;
+            position: relative;
+            top: 20vh;
+            img{
+                padding-left:5px;
+            }
+        }
     }
-}}
+}
+
+}
