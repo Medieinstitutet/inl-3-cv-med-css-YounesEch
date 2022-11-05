@@ -1,97 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300&display=swap");
-@media screen and (min-width: 1024px) {
-  .fullpage {
-    height: 100vh;
-    float: left;
-    display: flex;
-    background-color: black;
-  }
-  .fullpage h1 {
-    font-size: 1rem;
-    font-weight: bolder;
-  }
-  .fullpage img {
-    box-shadow: 10px 10px 10px rgba(189, 48, 48, 0.717), inset 10px 10px 10px rgba(196, 181, 181, 0.717), 10px 10px;
-  }
-  .fullpage .container {
-    justify-content: center;
-    align-items: center;
-    margin: auto;
-    margin-bottom: 30%;
-  }
-}
-.fullpage-two {
-  min-height: 100vh;
-}
-.fullpage-two .accordion {
-  float: right;
-  text-align: center;
-  padding: 5%;
-}
-.fullpage-two .accordion .accordion__content {
-  background-color: rgb(53, 37, 37);
-  line-height: 1;
-  font-size: 1rem;
-  visibility: hidden;
-}
-.fullpage-two aside {
-  width: 40%;
-  float: right;
-}
-.fullpage-two aside .aside__box {
-  padding-top: 3rem;
-}
-
-@media screen and (min-width: 1366px) {
-  .fullpage {
-    min-height: 100vh;
-    background-color: black;
-    float: left;
-    display: flex;
-  }
-  .fullpage h1 {
-    font-size: 1rem;
-    font-weight: bolder;
-  }
-  .fullpage img {
-    box-shadow: 10px 10px 10px rgba(23, 42, 142, 0.717), inset 10px 10px 10px rgba(11, 50, 108, 0.717), 10px 10px;
-  }
-  .fullpage .container {
-    justify-content: center;
-    align-items: center;
-    margin: auto;
-    margin-bottom: 30%;
-  }
-}
-.fullpage-two {
-  min-height: 100vh;
-  min-width: 100vw;
-}
-.fullpage-two .accordion {
-  float: left;
-  width: 40%;
-  text-align: center;
-}
-.fullpage-two .accordion .accordion__content {
-  background-color: rgb(136, 156, 173);
-  line-height: 1;
-  font-size: 1rem;
-  line-height: 1.5em;
-}
-.fullpage-two .accordion .accordion__content p {
-  color: black;
-  font-size: larger;
-  line-height: 1.2rem;
-}
-.fullpage-two aside {
-  width: 40%;
-  float: right;
-}
-.fullpage-two aside .aside__box {
-  padding-top: 3rem;
-  line-height: 1.5rem;
-}
-
 * {
   box-sizing: border-box;
   margin: 0;
@@ -99,10 +5,36 @@
   font-family: "Poppins", sans-serif;
 }
 
-.fullpage {
+.pageone {
   min-height: 100vh;
-  background-color: rgb(19, 21, 23);
+  background-color: rgb(31, 6, 6);
+}
+.pageone h1 {
+  color: #f1f1f1;
+  box-shadow: 10px 10px 50px rgba(138, 64, 64, 0.717), 10px 10px 50px rgba(53, 53, 118, 0.717);
+  justify-content: center;
+  text-align: center;
+  display: flex;
+  height: 3rem;
+  padding-top: 40vh;
+  background-color: linear-gradient rgba(53, 53, 119, 0.717);
+}
+
+.fullpage {
+  min-height: 50vh;
+  background-color: #80a7a0;
   min-width: 100vw;
+}
+.fullpage figure {
+  position: relative;
+  padding-top: 8rem;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+.fullpage figure img {
+  border-radius: 10px;
+  box-shadow: 20px 20px 20px rgba(189, 48, 48, 0.717), inset 20px 20px 20px rgba(196, 181, 181, 0.717), 40px 20px;
 }
 .fullpage h1 {
   justify-content: center;
@@ -110,7 +42,7 @@
   text-transform: uppercase;
   display: flex;
   top: 20px;
-  font-size: 2.3rem;
+  font-size: 2rem;
   margin: 20px;
   color: #f1f1f1;
 }
@@ -120,25 +52,15 @@
   text-transform: uppercase;
   display: flex;
   top: 20px;
-  font-size: 1rem;
+  font-size: small;
   color: #f1f1f1;
-}
-.fullpage figure {
-  position: relative;
-  justify-content: center;
-  align-items: center;
-  display: flex;
-}
-.fullpage figure img {
-  border-radius: 10px;
-  box-shadow: 20px 20px 20px rgba(189, 48, 48, 0.717), inset 20px 20px 20px rgba(196, 181, 181, 0.717), 40px 20px;
 }
 .fullpage .front {
   justify-content: center;
   align-items: center;
   display: flex;
   position: relative;
-  font-size: 1.7rem;
+  font-size: small;
   bottom: 0;
   text-transform: uppercase;
   border-radius: 2px;
@@ -156,24 +78,25 @@
   min-width: 100vw;
 }
 .fullpage-two .accordion {
-  box-shadow: 0 0 10px rgb(0, 0, 0);
-  background-color: #18473e;
+  background-color: #80a7a0;
   min-height: 50vh;
   width: 100%;
+  text-align: center;
 }
 .fullpage-two .accordion__label {
+  box-shadow: 10px 10px 10px rgb(47, 8, 8);
+  background-color: #032d01;
   display: block;
   color: #f1f1f1;
   height: 30px;
-  width: 100%;
   font-size: x-large;
-  left: 20vw;
   font-weight: 500;
   cursor: pointer;
   transition: background 0.1s;
+  border-radius: 10px;
 }
 .fullpage-two .accordion__label:hover {
-  background-color: rgb(0, 0, 0);
+  background-color: rgb(10, 63, 36);
 }
 .fullpage-two .accordion__label::after {
   content: "";
@@ -186,7 +109,7 @@
   transition: transform 0.4s;
 }
 .fullpage-two .accordion__content {
-  background-color: rgb(53, 37, 37);
+  background-color: rgb(194, 203, 196);
   line-height: 1;
   font-size: 1rem;
   display: none;
@@ -201,11 +124,16 @@
 .fullpage-two .accordion__input:checked ~ .accordion__label::after {
   transform: translateY(-50%) rotate(0.5turn);
 }
+.fullpage-two .accordion__box {
+  justify-content: center;
+  text-align: center;
+  padding: 30px;
+}
 .fullpage-two aside {
   position: relative;
   display: block;
   overflow: hidden;
-  background-color: #18473e;
+  background-color: #80a7a0;
   box-sizing: border-box;
   min-height: 50vh;
   padding: 2rem;
@@ -215,10 +143,13 @@
   background-color: #111;
   justify-content: center;
   align-items: center;
+  text-align: center;
+  padding: 10px;
+  min-height: 20vh;
 }
 .fullpage-two aside .accordion__label {
   display: block;
-  color: #fff;
+  color: #f1f1f1;
   font-weight: 500;
   cursor: pointer;
   justify-content: center;
@@ -238,7 +169,7 @@
 }
 .fullpage-two aside .skill-bar {
   height: 10px;
-  background-color: #282828;
+  background-color: #80a7a0;
   border-radius: 3px;
 }
 .fullpage-two aside .skill-per {
@@ -292,13 +223,18 @@
   visibility: hidden;
 }
 
+.downloadCV {
+  display: none;
+}
+
 footer {
-  background-color: rgba(174, 168, 168, 0.717);
+  background-color: rgba(203, 197, 197, 0.717);
   bottom: 0;
   text-align: center;
 }
 footer i {
-  color: #111;
+  color: rgb(12, 9, 10);
+  box-shadow: 0 0 10px rgba(129, 122, 122, 0.717);
   font-size: small;
   margin: 10px;
   padding: 5px;
@@ -307,8 +243,6 @@ footer i {
   cursor: pointer;
   text-align: center;
   justify-content: center;
-  -webkit-text-decoration: wavy;
-          text-decoration: wavy;
 }
 footer i:hover {
   background-color: white;
@@ -316,46 +250,36 @@ footer i:hover {
   box-shadow: 0 0 30px #fff;
 }
 
-@media screen and (min-width: 1440px) {
-  .body {
-    display: flex;
-  }
-  .fullpage {
-    display: grid;
-    grid-template-columns: 100px;
-    min-width: 30%;
-    padding: 2px;
-  }
+@media screen and (min-width: 1024px) {
   .fullpage .container {
     min-height: 100vh;
-    display: flex;
+    top: 50vh;
+    font-size: xx-large;
   }
   .fullpage h1 {
-    font-size: smaller;
+    font-size: larger;
+    color: #111;
   }
   .fullpage h2 {
-    font-size: smaller;
+    font-size: small;
+    color: #111;
   }
   .fullpage .front {
-    font-size: smaller;
-  }
-  .fullpage img {
-    height: 200px;
-    width: 100px;
+    font-size: small;
   }
   .fullpage-two {
     position: relative;
-    min-width: 40vw;
+    background-color: #80a7a0;
   }
   .fullpage-two .accordion {
+    text-align: center;
     display: grid;
-    grid-template-columns: 300px;
-    width: 30%;
-    min-height: 100vh;
-    background-color: #111;
+    grid-template-columns: 500px 500px;
   }
   .fullpage-two .accordion .accordion__content {
     visibility: visible;
+    text-align: center;
+    justify-content: center;
   }
   .fullpage-two .accordion .accordion__input {
     visibility: hidden;
@@ -363,29 +287,29 @@ footer i:hover {
   .fullpage-two .accordion__content {
     display: block;
   }
-  .fullpage-two aside {
+  .fullpage-two .downloadCV {
+    font-size: x-large;
+    display: block;
     display: grid;
-    grid-template-columns: 1500px 500px;
-    width: 40%;
+  }
+  .fullpage-two aside {
     min-height: 100vh;
-    background-color: #111;
+    padding: 10rem;
   }
   .fullpage-two aside .accordion__content {
-    height: 15vh;
+    height: 20vh;
     padding-top: 20px;
     text-align: center;
   }
   .fullpage-two aside .aside__box {
     position: relative;
   }
-  .fullpage-two aside div {
-    width: 30vw;
-  }
   .fullpage-two aside .desktop {
     visibility: visible;
     color: burlywood;
     position: relative;
-    top: 20vh;
+    margin: 40px;
+    background-color: #80a7a0;
   }
   .fullpage-two aside .desktop img {
     padding-left: 5px;
