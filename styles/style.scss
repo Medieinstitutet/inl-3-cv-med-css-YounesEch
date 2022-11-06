@@ -3,42 +3,52 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: 'Poppins', sans-serif;
     scroll-behavior: smooth;
 
 }
 .pageone{
     min-height: 100vh;
-    min-width: 100%;
-    background-color: rgb(7, 2, 2);
+    width: 100vw;
+    background: rgb(189,195,199);
+    background: linear-gradient(95deg, rgba(189,195,199,1) 0%, rgba(44,62,80,1) 41%);
 
     .menu{
         color: #f1f1f1;
+        visibility: hidden;  
+    }
+
+    .side{
+        justify-content:space-around;
+        display: flex;
+        text-decoration: none;
+        background: rgb(13,48,83);
+        background: radial-gradient(circle, rgba(13,48,83,1) 63%, rgba(189,195,199,1) 91%);
     }
     h1{
-    color: #f1f1f1;
-    justify-content: center;
-    text-align: center;
-    display: flex;
-    letter-spacing: 3px;
-    position: relative;
-    height: 40px;
-    top: 50vh;
-    width: 20rem;
-    left: 5rem;
-    box-shadow: 10px 0px 20px #f1f1f1,
+        color: #f1f1f1;
+        justify-content: center;
+        text-align: center;
+        display: flex;
+        letter-spacing: 3px;
+        position: relative;
+        height: 40px;
+        top: 50vh;
+        width: 15rem;
+        left: 5rem;
+        box-shadow: 10px 0px 20px #f1f1f1,
 
     }
     a{
         color: #f1f1f1;
-    }
-
+        justify-content: space-around;
+        text-align: center;}
         }
 
 .fullpage{
     min-height: 50vh;
-    background-color:rgb(41, 40, 40);
-    min-width: 100vw;
+    background: rgb(189,195,199);
+    background: linear-gradient(95deg, rgba(189,195,199,1) 0%, rgba(44,62,80,1) 41%);
+    width: 100vw;
 
     figure{
         position: relative;
@@ -52,7 +62,6 @@
             box-shadow: 20px 20px 20px rgba(189, 48, 48, 0.717),
             inset 20px 20px 20px rgba(196, 181, 181, 0.717),
             40px 20px;
-            
         }
     }
 
@@ -66,9 +75,6 @@
         margin: 20px;
         color: #f1f1f1;
     }
-
-    
-
     
     .front{
         justify-content: center;
@@ -91,7 +97,7 @@
 
     .profiledesktop{
         margin-left: auto;
-        width: 600px;
+        width: 500px;
         padding: 5px;
         
         h2{
@@ -119,8 +125,8 @@
         font-size: 20px;
         left: 2rem;
         padding-bottom: 5px;
-    }
-    
+}
+
 }
 
 .fullpage-two{
@@ -128,7 +134,8 @@
         min-width: 100vw;
 
     .accordion{
-        background-color:rgb(41, 40, 40);
+        background: rgb(189,195,199);
+        background: linear-gradient(95deg, rgba(189,195,199,1) 0%, rgba(44,62,80,1) 41%);
         min-height: 50vh;
         width: 100%;  
         text-align: center;  
@@ -138,7 +145,8 @@
 
     .accordion__label{
         box-shadow: 10px 10px 10px rgb(47, 8, 8);
-        background-color: #032d01;
+        background: rgb(13,48,83);
+        background: linear-gradient(95deg, rgba(13,48,83,1) 63%, rgba(189,195,199,1) 91%);
         display: block;
         color: #f1f1f1;
         height: 30px;
@@ -200,7 +208,8 @@
         position: relative;
         display: block;
         overflow: hidden;
-        background-color:rgb(41, 40, 40);
+        background: rgb(189,195,199);
+        background: linear-gradient(95deg, rgba(189,195,199,1) 0%, rgba(44,62,80,1) 41%);
         box-sizing: border-box;
         min-height: 50vh;
         width: 100vw;
@@ -292,17 +301,25 @@
 }
 
 footer{
-    background-color: rgba(203, 197, 197, 0.717);
-    bottom:0;
-    text-align: center;
+    background: rgb(189,195,199);
+    background: linear-gradient(95deg, rgba(189,195,199,1) 0%, rgba(44,62,80,1) 41%);
+    text-align: center; 
+    min-height: 50vh;
 
     .contact{
-        box-shadow: 10px 0px 5px #14740f;
+        background: #bdc3c7;
+        background: linear-gradient(95deg, rgba(189,195,199,1) 0%, rgba(44,62,80,1) 41%);
+        box-shadow: 10px 0px 3px rgb(13,48,83);
+        color: #f1f1f1;
+        width: 50%;
+        margin: auto;
     }
-
+    .contact{
+        position: relative;
+        top: 10px;
+    }
     i{
-        color:rgb(12, 9, 10);
-        box-shadow: 0 0 10px rgba(129, 122, 122, 0.717);
+        box-shadow: 0 0 10px #817a7ab7;
         font-size:small;
         margin: 10px;
         padding: 5px;
@@ -311,6 +328,11 @@ footer{
         cursor: pointer;
         text-align: center;
         justify-content: center;
+        color: #060505;
+        position: relative;
+        top: 30px;
+        display: flex;
+        font-weight: bolder;
 
     }
 
@@ -325,6 +347,15 @@ footer{
     .pageone{
         text-align: center;
         display: flex;
+
+        .menu{
+            visibility: visible;
+            
+        }
+
+        .side{
+            display: inline;
+        }
 
     h1{
         font-size: 40px;
@@ -438,10 +469,17 @@ footer{
        display: block;
     }
 
+    ul{
+        position: relative;
+        text-align: center;
+    }
+    
     .downloadCV{
         font-size: x-large;
         display: block;
         display: grid;
+        font-size: 15px;
+        text-decoration: underline #14740f;
     }
 
     aside{
@@ -476,4 +514,23 @@ footer{
 
         }
     }
+}
+
+footer{
+    min-height: 40vh;
+}
+.contact{
+    top: 20px;
+    position: relative;
+}
+ul{
+    position: relative;
+    font-size: larger;
+
+    i{
+        font-size:large;
+        font-weight: bolder;
+        display: inline;
+}
+
 }}

@@ -2,17 +2,25 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: "Poppins", sans-serif;
   scroll-behavior: smooth;
 }
 
 .pageone {
   min-height: 100vh;
-  min-width: 100%;
-  background-color: rgb(7, 2, 2);
+  width: 100vw;
+  background: rgb(189, 195, 199);
+  background: linear-gradient(95deg, rgb(189, 195, 199) 0%, rgb(44, 62, 80) 41%);
 }
 .pageone .menu {
   color: #f1f1f1;
+  visibility: hidden;
+}
+.pageone .side {
+  justify-content: space-around;
+  display: flex;
+  text-decoration: none;
+  background: rgb(13, 48, 83);
+  background: radial-gradient(circle, rgb(13, 48, 83) 63%, rgb(189, 195, 199) 91%);
 }
 .pageone h1 {
   color: #f1f1f1;
@@ -23,18 +31,21 @@
   position: relative;
   height: 40px;
   top: 50vh;
-  width: 20rem;
+  width: 15rem;
   left: 5rem;
   box-shadow: 10px 0px 20px #f1f1f1;
 }
 .pageone a {
   color: #f1f1f1;
+  justify-content: space-around;
+  text-align: center;
 }
 
 .fullpage {
   min-height: 50vh;
-  background-color: rgb(41, 40, 40);
-  min-width: 100vw;
+  background: rgb(189, 195, 199);
+  background: linear-gradient(95deg, rgb(189, 195, 199) 0%, rgb(44, 62, 80) 41%);
+  width: 100vw;
 }
 .fullpage figure {
   position: relative;
@@ -77,7 +88,7 @@
 }
 .fullpage .profiledesktop {
   margin-left: auto;
-  width: 600px;
+  width: 500px;
   padding: 5px;
 }
 .fullpage .profiledesktop h2 {
@@ -111,7 +122,8 @@
   min-width: 100vw;
 }
 .fullpage-two .accordion {
-  background-color: rgb(41, 40, 40);
+  background: rgb(189, 195, 199);
+  background: linear-gradient(95deg, rgb(189, 195, 199) 0%, rgb(44, 62, 80) 41%);
   min-height: 50vh;
   width: 100%;
   text-align: center;
@@ -119,7 +131,8 @@
 }
 .fullpage-two .accordion__label {
   box-shadow: 10px 10px 10px rgb(47, 8, 8);
-  background-color: #032d01;
+  background: rgb(13, 48, 83);
+  background: linear-gradient(95deg, rgb(13, 48, 83) 63%, rgb(189, 195, 199) 91%);
   display: block;
   color: #f1f1f1;
   height: 30px;
@@ -172,7 +185,8 @@
   position: relative;
   display: block;
   overflow: hidden;
-  background-color: rgb(41, 40, 40);
+  background: rgb(189, 195, 199);
+  background: linear-gradient(95deg, rgb(189, 195, 199) 0%, rgb(44, 62, 80) 41%);
   box-sizing: border-box;
   min-height: 50vh;
   width: 100vw;
@@ -262,16 +276,25 @@
 }
 
 footer {
-  background-color: rgba(203, 197, 197, 0.717);
-  bottom: 0;
+  background: rgb(189, 195, 199);
+  background: linear-gradient(95deg, rgb(189, 195, 199) 0%, rgb(44, 62, 80) 41%);
   text-align: center;
+  min-height: 50vh;
 }
 footer .contact {
-  box-shadow: 10px 0px 5px #14740f;
+  background: #bdc3c7;
+  background: linear-gradient(95deg, rgb(189, 195, 199) 0%, rgb(44, 62, 80) 41%);
+  box-shadow: 10px 0px 3px rgb(13, 48, 83);
+  color: #f1f1f1;
+  width: 50%;
+  margin: auto;
+}
+footer .contact {
+  position: relative;
+  top: 10px;
 }
 footer i {
-  color: rgb(12, 9, 10);
-  box-shadow: 0 0 10px rgba(129, 122, 122, 0.717);
+  box-shadow: 0 0 10px rgba(129, 122, 122, 0.7176470588);
   font-size: small;
   margin: 10px;
   padding: 5px;
@@ -280,6 +303,11 @@ footer i {
   cursor: pointer;
   text-align: center;
   justify-content: center;
+  color: #060505;
+  position: relative;
+  top: 30px;
+  display: flex;
+  font-weight: bolder;
 }
 footer i:hover {
   background-color: white;
@@ -291,6 +319,12 @@ footer i:hover {
   .pageone {
     text-align: center;
     display: flex;
+  }
+  .pageone .menu {
+    visibility: visible;
+  }
+  .pageone .side {
+    display: inline;
   }
   .pageone h1 {
     font-size: 40px;
@@ -379,10 +413,17 @@ footer i:hover {
   .fullpage-two .accordion__content {
     display: block;
   }
+  .fullpage-two ul {
+    position: relative;
+    text-align: center;
+  }
   .fullpage-two .downloadCV {
     font-size: x-large;
     display: block;
     display: grid;
+    font-size: 15px;
+    -webkit-text-decoration: underline #14740f;
+            text-decoration: underline #14740f;
   }
   .fullpage-two aside {
     min-height: 100vh;
@@ -408,5 +449,21 @@ footer i:hover {
   }
   .fullpage-two aside .desktop .downloadCV {
     visibility: visible;
+  }
+  footer {
+    min-height: 40vh;
+  }
+  .contact {
+    top: 20px;
+    position: relative;
+  }
+  ul {
+    position: relative;
+    font-size: larger;
+  }
+  ul i {
+    font-size: large;
+    font-weight: bolder;
+    display: inline;
   }
 }/*# sourceMappingURL=style.css.map */
