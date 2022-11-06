@@ -3,26 +3,37 @@
   margin: 0;
   padding: 0;
   font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
 }
 
 .pageone {
   min-height: 100vh;
-  background-color: rgb(31, 6, 6);
+  min-width: 100%;
+  background-color: rgb(7, 2, 2);
+}
+.pageone .menu {
+  color: #f1f1f1;
 }
 .pageone h1 {
   color: #f1f1f1;
-  box-shadow: 10px 10px 50px rgba(138, 64, 64, 0.717), 10px 10px 50px rgba(53, 53, 118, 0.717);
   justify-content: center;
   text-align: center;
   display: flex;
-  height: 3rem;
-  padding-top: 40vh;
-  background-color: linear-gradient rgba(53, 53, 119, 0.717);
+  letter-spacing: 3px;
+  position: relative;
+  height: 40px;
+  top: 50vh;
+  width: 20rem;
+  left: 5rem;
+  box-shadow: 10px 0px 20px #f1f1f1;
+}
+.pageone a {
+  color: #f1f1f1;
 }
 
 .fullpage {
   min-height: 50vh;
-  background-color: #80a7a0;
+  background-color: rgb(41, 40, 40);
   min-width: 100vw;
 }
 .fullpage figure {
@@ -31,6 +42,7 @@
   justify-content: center;
   align-items: center;
   display: flex;
+  padding-bottom: 40px;
 }
 .fullpage figure img {
   border-radius: 10px;
@@ -44,15 +56,6 @@
   top: 20px;
   font-size: 2rem;
   margin: 20px;
-  color: #f1f1f1;
-}
-.fullpage h2 {
-  justify-content: center;
-  align-items: center;
-  text-transform: uppercase;
-  display: flex;
-  top: 20px;
-  font-size: small;
   color: #f1f1f1;
 }
 .fullpage .front {
@@ -72,16 +75,47 @@
   bottom: 0;
   font-size: 2rem;
 }
+.fullpage .profiledesktop {
+  margin-left: auto;
+  width: 600px;
+  padding: 5px;
+}
+.fullpage .profiledesktop h2 {
+  font-size: 20px;
+  letter-spacing: 2px;
+  left: 2rem;
+  position: relative;
+  padding-top: 20px;
+  -webkit-text-decoration: underline #14740f;
+          text-decoration: underline #14740f;
+}
+.fullpage .profiledesktop p {
+  font-size: 10px;
+  color: #f1f1f1;
+  contain: content;
+  padding-right: 10rem;
+  padding-left: 2rem;
+}
+.fullpage .side a {
+  color: #f1f1f1;
+}
+.fullpage h2 {
+  color: #f1f1f1;
+  font-size: 20px;
+  left: 2rem;
+  padding-bottom: 5px;
+}
 
 .fullpage-two {
   min-height: 100vh;
   min-width: 100vw;
 }
 .fullpage-two .accordion {
-  background-color: #80a7a0;
+  background-color: rgb(41, 40, 40);
   min-height: 50vh;
   width: 100%;
   text-align: center;
+  padding: 10px;
 }
 .fullpage-two .accordion__label {
   box-shadow: 10px 10px 10px rgb(47, 8, 8);
@@ -113,6 +147,11 @@
   line-height: 1;
   font-size: 1rem;
   display: none;
+  margin: 10px;
+  margin-left: 30px;
+  margin-right: 30px;
+  border-radius: 5px;
+  box-shadow: 10px 0px 10px #545655;
 }
 .fullpage-two .accordion__input {
   visibility: hidden;
@@ -133,33 +172,14 @@
   position: relative;
   display: block;
   overflow: hidden;
-  background-color: #80a7a0;
+  background-color: rgb(41, 40, 40);
   box-sizing: border-box;
   min-height: 50vh;
-  padding: 2rem;
   width: 100vw;
-}
-.fullpage-two aside .accordion__content {
-  background-color: #111;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
   padding: 10px;
-  min-height: 20vh;
-}
-.fullpage-two aside .accordion__label {
-  display: block;
-  color: #f1f1f1;
-  font-weight: 500;
-  cursor: pointer;
-  justify-content: center;
-  text-align: center;
-  transition: background 0.1s;
 }
 .fullpage-two aside .skills {
   width: 100%;
-  padding: 0 10px;
-  max-width: 700px;
 }
 .fullpage-two aside .skill-name {
   font-size: 14px;
@@ -219,18 +239,35 @@
     width: 100%;
   }
 }
-.fullpage-two aside .desktop {
+.fullpage-two .downloadCV {
+  display: none;
   visibility: hidden;
 }
-
-.downloadCV {
-  display: none;
+.fullpage-two ul {
+  list-style: none;
+}
+.fullpage-two li {
+  font-size: 10px;
+  color: #f1f1f1;
+  text-align: center;
+  padding: 10px;
+}
+.fullpage-two h2 {
+  color: #f1f1f1;
+  padding: 5px;
+  font-size: 20px;
+  text-align: center;
+  -webkit-text-decoration: underline #14740f;
+          text-decoration: underline #14740f;
 }
 
 footer {
   background-color: rgba(203, 197, 197, 0.717);
   bottom: 0;
   text-align: center;
+}
+footer .contact {
+  box-shadow: 10px 0px 5px #14740f;
 }
 footer i {
   color: rgb(12, 9, 10);
@@ -251,30 +288,85 @@ footer i:hover {
 }
 
 @media screen and (min-width: 1024px) {
+  .pageone {
+    text-align: center;
+    display: flex;
+  }
+  .pageone h1 {
+    font-size: 40px;
+    letter-spacing: 3px;
+    width: 30%;
+    left: 15rem;
+  }
+  .side {
+    min-width: 20%;
+    background-color: #121227;
+  }
+  .side a {
+    color: #fff;
+    font-size: 18px;
+    letter-spacing: 2px;
+    display: list-item;
+    padding: 30px;
+    border: 1px solid black;
+    box-shadow: 1px 1px 10px rgb(12, 9, 10);
+  }
+  .side a:hover {
+    transition: 0.5s;
+    background-color: #d13639;
+    text-transform: uppercase;
+  }
+  .menu {
+    font-size: 30px;
+    padding: 15px;
+    color: #f1f1f1;
+    letter-spacing: 4px;
+    background-color: #111;
+  }
   .fullpage .container {
-    min-height: 100vh;
+    min-height: 50vh;
+    width: 30vw;
     top: 50vh;
+    left: 0;
     font-size: xx-large;
+  }
+  .fullpage .profiledesktop {
+    margin-left: auto;
+    width: 600px;
+  }
+  .fullpage .profiledesktop h2 {
+    font-size: 20px;
+    letter-spacing: 2px;
+  }
+  .fullpage .profiledesktop p {
+    font-size: 15px;
+    display: flex;
+    padding-right: 10rem;
+  }
+  .fullpage .aboutmedesktop {
+    margin-left: auto;
+    min-height: 30vh;
+    color: #f1f1f1;
   }
   .fullpage h1 {
     font-size: larger;
-    color: #111;
+    color: #f1f1f1;
   }
   .fullpage h2 {
     font-size: small;
-    color: #111;
+    color: #f1f1f1;
   }
   .fullpage .front {
     font-size: small;
   }
   .fullpage-two {
     position: relative;
-    background-color: #80a7a0;
+    background-color: rgb(41, 40, 40);
   }
   .fullpage-two .accordion {
     text-align: center;
-    display: grid;
-    grid-template-columns: 500px 500px;
+    padding-left: 5rem;
+    padding-right: 5rem;
   }
   .fullpage-two .accordion .accordion__content {
     visibility: visible;
@@ -295,6 +387,7 @@ footer i:hover {
   .fullpage-two aside {
     min-height: 100vh;
     padding: 10rem;
+    background-color: rgb(41, 40, 40);
   }
   .fullpage-two aside .accordion__content {
     height: 20vh;
@@ -309,9 +402,11 @@ footer i:hover {
     color: burlywood;
     position: relative;
     margin: 40px;
-    background-color: #80a7a0;
   }
   .fullpage-two aside .desktop img {
     padding-left: 5px;
+  }
+  .fullpage-two aside .desktop .downloadCV {
+    visibility: visible;
   }
 }/*# sourceMappingURL=style.css.map */

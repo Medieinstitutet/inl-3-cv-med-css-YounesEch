@@ -12,29 +12,37 @@
 </head>
 <body>
     <section class="pageone"> 
-        <button>
-            <span></span>
-            <span></span>
-            <span></span>
-        </button>
-        <h1>Younes Echelhi</h1></section>
-    <section class="fullpage" id="home">
+       <aside class="side">
+        <h2 class="menu">Welcome</h2>
+        <a href="#aboutme">About me</a>
+        <a href="#experience">Experience</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact me</a>
+       </aside>
+        <h1>Younes Echelhi</h1>
+    </section>
+    <section class="fullpage" id="aboutme">
         <div class="container">
                 <figure><img src="assets/images/profile_image.jpg" height="200" width="150" alt="man with beard, high-rise building"></figure>
-            <h1 class="front"> Graduate behavioral scientist </h1>
-            <h2> Upbringing Front End Developer</h2>
+            <h2 class="front"> Graduate behavioral scientist </h2>
+            <h2 class="front"> Upbringing Front End Developer</h2>
         </div>
+        <div class="profiledesktop"><h2>About me</h2>
+           <div class="aboutmedesktop">
+               <p> Im a 30 years old Front End Developer student who is working fulltime in leader position. The last 8 years i have been working as a leader and now i have become more and more intressting in following my youth dream in being full time developer. Im also intressted in football and fitness.I´m Looking forward to have you with me in my journy to a full time Developer.</p>
+           </div>
+       </div>
     </section>
 
-<section class="fullpage-two">
+<section class="fullpage-two" id="experience">
     <section class="accordion"   id="page-two"> 
-                <div class="accordion__box">
-                     <input type="radio" name="accordion" id="section1" class="accordion__input">
-                    <label for="section1" class="accordion__label" tabindex="0">Profile</label>
+                    <div class="accordion__box">
+                        <input type="radio" name="accordion" id="section1" class="accordion__input">
+                    <label for="section1" class="accordion__label" tabindex="0">Wisewords from managers</label>
                     <div class="accordion__content">
-                        <p> A leader with great visions a great commitment and drive is how I am described by my managers. I have a great drive in my commitments and today I have taken up an interest in computer science. Today, in parallel with my work, I am studying Front End Developer.</p>
+                        <p> A leader with great visions a great commitment and drive is how I am described by my managers. I have a great drive in my commitments and understanding in my jobs </p>
                     </div>
-                </div>
+                </div> 
                 <div class="accordion__box">
                     <input type="radio" name="accordion" id="section2" class="accordion__input">
                     <label for="section2" class="accordion__label" tabindex="0"> Experience</label>
@@ -66,11 +74,9 @@
                     </div> 
                 </div>
     </section>
-                <aside>
-                    <div>
-                        <input type="radio" name="accordion" id="section4" class="accordion__input">
-                        <label for="section4" class="accordion__label"> Competence</label>
-                        <div class="accordion__content">
+                <aside id="skills">
+                    <div class="aside__box">
+                        <h2>Skills Experience</h2>
                             <div class="skill"></div>
                             <div class="skill-name"> Leadership</div>
                             <div class="skill-bar">
@@ -94,9 +100,7 @@
                     </div>
 
                     <div class="aside__box">
-                        <input type="radio" name="accordion" id="section5" class="accordion__input">
-                        <label for="section5" class="accordion__label"> Language</label>
-                        <div class="accordion__content">
+                        <h2>Language</h2>
                         <div class="skills">
                             <div class="skill"></div>
                                 <div class="skill-name"> Arabic</div>
@@ -116,15 +120,17 @@
                         </div>
                         </div>  
                         <figure class="desktop">
-                            <img src="assets/images/css.jpg" height="100px 140px" alt="">
-                            <img src="assets/images/html.jpg" height="100px 67px" alt="">
-                            <img src="assets/images/js.jpg" height="100px 56px" alt="">
-                            <div class="downloadCV">Download CV <a href="assets/images/Younes CV .png"><img src="assets/images/Younes CV .png" height="100px" width="100px" alt="" target="blank"></a></div>
-                        </figure> 
+                            <ul><h2>Competence</h2>
+                            <li>HTML - Nybörjare</li>
+                            <li>CSS - Nybörjare</li>
+                            <li>Jacavsript - Nybörjare</li>
+                            <div class="downloadCV">Download CV <a href="assets/images/Younes CV .png"><img src="assets/images/Younes CV .png" height="50px" width="50px" alt="cv in pdf" target="_blank"></a></div>
+                       </ul> 
+                    </figure> 
                     </aside>               
     </section>
 
-<footer class="symbols">
+<footer class="symbols" id="contact">
     <h2 class="contact">Contact me</h2>
             <ul> 
                 <a href="mailto:younes_echelhi@hotmail.com">
