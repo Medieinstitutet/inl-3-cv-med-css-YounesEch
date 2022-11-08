@@ -1,0 +1,63 @@
+@media screen and (min-width: 1366px){
+    .fullpage{
+    min-height: 100vh;
+    background-color: black;
+    float: left;
+    display: flex;
+
+    h1{
+        font-size: 1rem;
+        font-weight: bolder;
+    }
+
+    img{
+        box-shadow: 10px 10px 10px rgba(23, 42, 142, 0.717),
+            inset 10px 10px 10px rgba(11, 50, 108, 0.717),
+            10px 10px;
+    }
+
+
+    .container{
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        margin-bottom: 30%;
+    }
+}
+}
+
+.fullpage-two{
+    min-height: 100vh;
+    min-width: 100vw;
+
+    .accordion{
+        float: left;
+        width: 40%;
+        text-align: center;
+
+
+       
+
+        .accordion__content{
+            background-color: rgb(136, 156, 173);
+            line-height: 1;
+            font-size: 1rem; 
+            line-height: 1.5em;
+            p{
+                color: black;
+                font-size: larger;
+                line-height: 1.2rem;
+            }
+        } }
+       
+    aside{
+        width: 40%;
+        float: right; 
+        
+
+        .aside__box{
+            padding-top: 3rem;
+            line-height: 1.5rem;
+        }
+    }
+}
